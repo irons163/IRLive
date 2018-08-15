@@ -12,6 +12,15 @@
 		8A0B4F0A212406E8001B2DC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F08212406E8001B2DC7 /* Main.storyboard */; };
 		8A0B4F0C212406EB001B2DC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F0B212406EB001B2DC7 /* Assets.xcassets */; };
 		8A0B4F0F212406EB001B2DC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F0D212406EB001B2DC7 /* LaunchScreen.storyboard */; };
+		8A0B4F1F21240915001B2DC7 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F1D21240915001B2DC7 /* Home.storyboard */; };
+		8A0B4F222124096D001B2DC7 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F202124096D001B2DC7 /* Live.storyboard */; };
+		8A0B4F24212409D7001B2DC7 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F23212409D7001B2DC7 /* Follow.storyboard */; };
+		8A0B4F2621240A66001B2DC7 /* MainViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B4F2521240A66001B2DC7 /* MainViewViewController.swift */; };
+		8A0B4F2821240C75001B2DC7 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0B4F2721240C75001B2DC7 /* Profile.storyboard */; };
+		8A0B4F3021240E59001B2DC7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B4F2F21240E59001B2DC7 /* HomeViewController.swift */; };
+		8A0B4F33212411B0001B2DC7 /* UIBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B4F32212411B0001B2DC7 /* UIBarButtonItem.swift */; };
+		8A0B4F35212429CF001B2DC7 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B4F34212429CF001B2DC7 /* PageTitleView.swift */; };
+		8A0B4F3721242EC9001B2DC7 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0B4F3621242EC9001B2DC7 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +31,15 @@
 		8A0B4F0B212406EB001B2DC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0B4F0E212406EB001B2DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0B4F10212406EB001B2DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0B4F1E21240915001B2DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IRLive/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		8A0B4F212124096D001B2DC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = IRLive/Base.lproj/Live.storyboard; sourceTree = "<group>"; };
+		8A0B4F23212409D7001B2DC7 /* Follow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Follow.storyboard; path = IRLive/Classes/Follow/Follow.storyboard; sourceTree = "<group>"; };
+		8A0B4F2521240A66001B2DC7 /* MainViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewController.swift; sourceTree = "<group>"; };
+		8A0B4F2721240C75001B2DC7 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = IRLive/Classes/Profile/Profile.storyboard; sourceTree = "<group>"; };
+		8A0B4F2F21240E59001B2DC7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A0B4F32212411B0001B2DC7 /* UIBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItem.swift; sourceTree = "<group>"; };
+		8A0B4F34212429CF001B2DC7 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
+		8A0B4F3621242EC9001B2DC7 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +56,10 @@
 		8A0B4EF8212406E8001B2DC7 = {
 			isa = PBXGroup;
 			children = (
+				8A0B4F2721240C75001B2DC7 /* Profile.storyboard */,
+				8A0B4F23212409D7001B2DC7 /* Follow.storyboard */,
+				8A0B4F202124096D001B2DC7 /* Live.storyboard */,
+				8A0B4F1D21240915001B2DC7 /* Home.storyboard */,
 				8A0B4F03212406E8001B2DC7 /* IRLive */,
 				8A0B4F02212406E8001B2DC7 /* Products */,
 			);
@@ -54,6 +76,7 @@
 		8A0B4F03212406E8001B2DC7 /* IRLive */ = {
 			isa = PBXGroup;
 			children = (
+				8A0B4F1621240733001B2DC7 /* Classes */,
 				8A0B4F04212406E8001B2DC7 /* AppDelegate.swift */,
 				8A0B4F06212406E8001B2DC7 /* ViewController.swift */,
 				8A0B4F08212406E8001B2DC7 /* Main.storyboard */,
@@ -62,6 +85,122 @@
 				8A0B4F10212406EB001B2DC7 /* Info.plist */,
 			);
 			path = IRLive;
+			sourceTree = "<group>";
+		};
+		8A0B4F1621240733001B2DC7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F1921240733001B2DC7 /* Main */,
+				8A0B4F1721240733001B2DC7 /* Home */,
+				8A0B4F1821240733001B2DC7 /* Live */,
+				8A0B4F1A21240733001B2DC7 /* Profile */,
+				8A0B4F1B21240733001B2DC7 /* Tools */,
+				8A0B4F1C21240734001B2DC7 /* Follow */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8A0B4F1721240733001B2DC7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F2E21240E30001B2DC7 /* Controller */,
+				8A0B4F2C21240E30001B2DC7 /* Model */,
+				8A0B4F2D21240E30001B2DC7 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8A0B4F1821240733001B2DC7 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		8A0B4F1921240733001B2DC7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F2A21240E13001B2DC7 /* Controller */,
+				8A0B4F2B21240E13001B2DC7 /* Model */,
+				8A0B4F2921240E13001B2DC7 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8A0B4F1A21240733001B2DC7 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8A0B4F1B21240733001B2DC7 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F3121241147001B2DC7 /* Extension */,
+				8A0B4F3621242EC9001B2DC7 /* Common.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		8A0B4F1C21240734001B2DC7 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		8A0B4F2921240E13001B2DC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F34212429CF001B2DC7 /* PageTitleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0B4F2A21240E13001B2DC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F2521240A66001B2DC7 /* MainViewViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A0B4F2B21240E13001B2DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0B4F2C21240E30001B2DC7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A0B4F2D21240E30001B2DC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A0B4F2E21240E30001B2DC7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F2F21240E59001B2DC7 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A0B4F3121241147001B2DC7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8A0B4F32212411B0001B2DC7 /* UIBarButtonItem.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +264,10 @@
 				8A0B4F0F212406EB001B2DC7 /* LaunchScreen.storyboard in Resources */,
 				8A0B4F0C212406EB001B2DC7 /* Assets.xcassets in Resources */,
 				8A0B4F0A212406E8001B2DC7 /* Main.storyboard in Resources */,
+				8A0B4F222124096D001B2DC7 /* Live.storyboard in Resources */,
+				8A0B4F1F21240915001B2DC7 /* Home.storyboard in Resources */,
+				8A0B4F2821240C75001B2DC7 /* Profile.storyboard in Resources */,
+				8A0B4F24212409D7001B2DC7 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A0B4F35212429CF001B2DC7 /* PageTitleView.swift in Sources */,
 				8A0B4F07212406E8001B2DC7 /* ViewController.swift in Sources */,
+				8A0B4F33212411B0001B2DC7 /* UIBarButtonItem.swift in Sources */,
+				8A0B4F2621240A66001B2DC7 /* MainViewViewController.swift in Sources */,
 				8A0B4F05212406E8001B2DC7 /* AppDelegate.swift in Sources */,
+				8A0B4F3021240E59001B2DC7 /* HomeViewController.swift in Sources */,
+				8A0B4F3721242EC9001B2DC7 /* Common.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +305,22 @@
 				8A0B4F0E212406EB001B2DC7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0B4F1D21240915001B2DC7 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0B4F1E21240915001B2DC7 /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0B4F202124096D001B2DC7 /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0B4F212124096D001B2DC7 /* Base */,
+			);
+			name = Live.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -280,6 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FMZXNUXTR6;
 				INFOPLIST_FILE = IRLive/Info.plist;
@@ -298,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FMZXNUXTR6;
 				INFOPLIST_FILE = IRLive/Info.plist;
