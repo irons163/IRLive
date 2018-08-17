@@ -27,12 +27,16 @@
 		8A76AA852126A05D009C2F43 /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A76AA832126A05D009C2F43 /* CollectionNormalCell.xib */; };
 		8A76AA882126AB8B009C2F43 /* CollectionPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76AA862126AB8A009C2F43 /* CollectionPrettyCell.swift */; };
 		8A76AA892126AB8B009C2F43 /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A76AA872126AB8B009C2F43 /* CollectionPrettyCell.xib */; };
+		8A76AA8B2126BD0A009C2F43 /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A76AA8A2126BD0A009C2F43 /* NetworkTools.swift */; };
 		8AD3A047212547F5008082EE /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3A046212547F5008082EE /* UIColor-Extension.swift */; };
 		8AD3A0492125484E008082EE /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3A0482125484E008082EE /* PageContentView.swift */; };
 		8AD3A04B21257B05008082EE /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD3A04A21257B05008082EE /* RecommendViewController.swift */; };
+		E2E7BF7EE8FF71CB96DCABD4 /* Pods_IRLive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C24947288F9C946EDD9F027 /* Pods_IRLive.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3101F3A543EB6A5787631D02 /* Pods-IRLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IRLive/Pods-IRLive.debug.xcconfig"; sourceTree = "<group>"; };
+		8448088C34C256A2B27D7CEC /* Pods-IRLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IRLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-IRLive/Pods-IRLive.release.xcconfig"; sourceTree = "<group>"; };
 		8A0B4F01212406E8001B2DC7 /* IRLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IRLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0B4F04212406E8001B2DC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A0B4F06212406E8001B2DC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,9 +59,11 @@
 		8A76AA832126A05D009C2F43 /* CollectionNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		8A76AA862126AB8A009C2F43 /* CollectionPrettyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionPrettyCell.swift; sourceTree = "<group>"; };
 		8A76AA872126AB8B009C2F43 /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
+		8A76AA8A2126BD0A009C2F43 /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		8AD3A046212547F5008082EE /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		8AD3A0482125484E008082EE /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		8AD3A04A21257B05008082EE /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		8C24947288F9C946EDD9F027 /* Pods_IRLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IRLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2E7BF7EE8FF71CB96DCABD4 /* Pods_IRLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +87,8 @@
 				8A0B4F1D21240915001B2DC7 /* Home.storyboard */,
 				8A0B4F03212406E8001B2DC7 /* IRLive */,
 				8A0B4F02212406E8001B2DC7 /* Products */,
+				E1516D1B414C2DBB34D45590 /* Pods */,
+				91AAD5B95336EC43576DCF67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,6 +166,7 @@
 			children = (
 				8A0B4F3121241147001B2DC7 /* Extension */,
 				8A0B4F3621242EC9001B2DC7 /* Common.swift */,
+				8A76AA8A2126BD0A009C2F43 /* NetworkTools.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -230,6 +240,23 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		91AAD5B95336EC43576DCF67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C24947288F9C946EDD9F027 /* Pods_IRLive.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1516D1B414C2DBB34D45590 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3101F3A543EB6A5787631D02 /* Pods-IRLive.debug.xcconfig */,
+				8448088C34C256A2B27D7CEC /* Pods-IRLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -237,9 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A0B4F13212406EB001B2DC7 /* Build configuration list for PBXNativeTarget "IRLive" */;
 			buildPhases = (
+				66256685967F05A7154D13CC /* [CP] Check Pods Manifest.lock */,
 				8A0B4EFD212406E8001B2DC7 /* Sources */,
 				8A0B4EFE212406E8001B2DC7 /* Frameworks */,
 				8A0B4EFF212406E8001B2DC7 /* Resources */,
+				6F4323C58483BEC24842CABC /* [CP] Embed Pods Frameworks */,
+				4C312F9FE9013D72A8ACCF7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,11 +333,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C312F9FE9013D72A8ACCF7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IRLive/Pods-IRLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66256685967F05A7154D13CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IRLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F4323C58483BEC24842CABC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IRLive/Pods-IRLive-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IRLive/Pods-IRLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A0B4EFD212406E8001B2DC7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A76AA8B2126BD0A009C2F43 /* NetworkTools.swift in Sources */,
 				8A0B4F35212429CF001B2DC7 /* PageTitleView.swift in Sources */,
 				8A76AA80212696D1009C2F43 /* CollectionHeaderView.swift in Sources */,
 				8AD3A0492125484E008082EE /* PageContentView.swift in Sources */,
@@ -478,6 +563,7 @@
 		};
 		8A0B4F14212406EB001B2DC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3101F3A543EB6A5787631D02 /* Pods-IRLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -497,6 +583,7 @@
 		};
 		8A0B4F15212406EB001B2DC7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8448088C34C256A2B27D7CEC /* Pods-IRLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
