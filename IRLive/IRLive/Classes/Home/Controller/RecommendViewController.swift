@@ -14,6 +14,7 @@ private let kItemH = kItemW * 3 / 4
 private let kHeaderViewH : CGFloat = 50
 
 private let kNormalCellID = "kNormalCellID"
+private let kPrettyCellID = "kPrettyCellID"
 private let kHeaderCellID = "kHeaderCellID"
 
 class RecommendViewController: UIViewController {
@@ -29,9 +30,11 @@ class RecommendViewController: UIViewController {
         
         let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = UIColor.white
         
         collectionView.register(UINib(nibName: "CollectionNormalCell", bundle: nil), forCellWithReuseIdentifier: kNormalCellID)
+        collectionView.register(UINib(nibName: "CollectionPrettyCell", bundle: nil), forCellWithReuseIdentifier: kPrettyCellID)
         collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderCellID)
         
         return collectionView
@@ -70,7 +73,14 @@ extension RecommendViewController : UICollectionViewDataSource {
 //    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        var cell : UICollectionViewCell
+        
+        if indexPath.section == 1 {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kPrettyCellID, for: indexPath)
+        }
+        else {
+            cell = collectionView.dequeueReusableCell(withReuseIdentifier: kNormalCellID, for: indexPath)
+        }
         //cell.backgroundColor = UIColor.red
         return cell
     }
@@ -80,5 +90,18 @@ extension RecommendViewController : UICollectionViewDataSource {
         headerView.backgroundColor = UIColor.green
         
         return headerView
+    }
+}
+
+extension RecommendViewController : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var size : CGSize
+        if indexPath.section == 1 {
+            size = CGSize(width: kItemW, height: kItemH * 2)
+        }else{
+            size = CGSize(width: kItemW, height: kItemH)
+        }
+        
+        return size
     }
 }

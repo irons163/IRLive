@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="IRLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ot-Ka-BNg">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="250"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="TQq-Rv-wUW">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="205"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Tiwan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hd3-bR-AlG">
+                                <rect key="frame" x="8" y="226" width="36" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="IRONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOi-Ci-SBG">
+                                <rect key="frame" x="8" y="205" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TQq-Rv-wUW" firstAttribute="top" secondItem="7Ot-Ka-BNg" secondAttribute="top" id="7x4-Jz-YdN"/>
+                            <constraint firstItem="Hd3-bR-AlG" firstAttribute="top" secondItem="mOi-Ci-SBG" secondAttribute="bottom" id="YbO-8I-QoB"/>
+                            <constraint firstItem="mOi-Ci-SBG" firstAttribute="leading" secondItem="7Ot-Ka-BNg" secondAttribute="leading" constant="8" id="fcO-Ml-bYM"/>
+                            <constraint firstAttribute="trailing" secondItem="TQq-Rv-wUW" secondAttribute="trailing" id="gea-8t-kgt"/>
+                            <constraint firstItem="mOi-Ci-SBG" firstAttribute="top" secondItem="TQq-Rv-wUW" secondAttribute="bottom" id="gfN-Tj-gi7"/>
+                            <constraint firstItem="Hd3-bR-AlG" firstAttribute="leading" secondItem="7Ot-Ka-BNg" secondAttribute="leading" constant="8" id="naX-RD-dHL"/>
+                            <constraint firstItem="TQq-Rv-wUW" firstAttribute="leading" secondItem="7Ot-Ka-BNg" secondAttribute="leading" id="rQT-5u-nl9"/>
+                            <constraint firstAttribute="bottom" secondItem="Hd3-bR-AlG" secondAttribute="bottom" constant="8" id="uSU-gP-AHm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="7Ot-Ka-BNg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="49L-eF-cGy"/>
+                <constraint firstItem="7Ot-Ka-BNg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TyQ-RV-5BH"/>
+                <constraint firstAttribute="bottom" secondItem="7Ot-Ka-BNg" secondAttribute="bottom" id="kuU-HH-uQp"/>
+                <constraint firstAttribute="trailing" secondItem="7Ot-Ka-BNg" secondAttribute="trailing" id="yOh-cX-drf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>
