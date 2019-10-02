@@ -10,6 +10,8 @@ import UIKit
 
 class CollectionNormalCell: UICollectionViewCell {
 
+    var anchor : AnchorModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

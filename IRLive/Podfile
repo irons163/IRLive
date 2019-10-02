@@ -7,5 +7,5 @@ target 'IRLive' do
 
   # Pods for IRLive
   pod 'Alamofire'
-
+  pod 'Kingfisher', '~> 4.0'
 end
